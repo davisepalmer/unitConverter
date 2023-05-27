@@ -13,7 +13,7 @@ class MyWindow : public Gtk::Window {
 
     protected:
         void on_text_changed(); // this will do all of the calculatios and change the output text
+        Gtk::Box m_box;
 };
-
 
 #endif
