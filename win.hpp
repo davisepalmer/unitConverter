@@ -1,29 +1,33 @@
-#ifndef WIN_HPP
-#define WIN_HPP
 
-#include <iostream>
-#include <gtkmm-3.0/gtkmm.h>
-// #include <gtkmm.h>
+/*DEPRECATED DONT USE just for simple test*/
 
-class Win : public Gtk::Window {
-    public:
-        Win();
-    private:
-        Gtk::Button m_button;
-        void hello_world();
-};
+// #ifndef WIN_HPP
+// #define WIN_HPP
 
-Win::Win() : m_button("Click me") {
-    set_default_size(200, 200);
-    set_title("test window");
+// #include <iostream>
+// #include <gtkmm-3.0/gtkmm.h>
+// // #include <gtkmm.h>
 
-    add(m_button);
-    m_button.signal_clicked().connect(sigc::mem_fun(*this, &Win::hello_world));
-    show_all();
-}
 
-void Win::hello_world() {
-    std::cout << "test" << std::endl;
-}
+// class Win : public Gtk::Window {
+//     public:
+//         Win();
+//     private:
+//         Gtk::Button m_button;
+//         void hello_world();
+// };
 
-#endif
+// Win::Win() : m_button("Click me") {
+//     set_default_size(200, 200);
+//     set_title("test window");
+
+//     add(m_button);
+//     m_button.signal_clicked().connect(sigc::mem_fun(*this, &Win::hello_world));
+//     show_all();
+// }
+
+// void Win::hello_world() {
+//     std::cout << "test" << std::endl;
+// }
+
+// #endif
