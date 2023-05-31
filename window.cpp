@@ -31,8 +31,9 @@ MyWindow::~MyWindow() {
 }
 
 void MyWindow::on_text_changed() {
-    std::cout << "test from line 34" << std::endl; 
+    // std::cout << "test from line 34" << std::endl; 
     std::string inputText = input->get_text();
-    std::cout << inputText << std::endl;
+    std::cout << "this is input text: " << inputText << std::endl;
+    // call converter funct here
     outputText->set_text(inputText);
 }
